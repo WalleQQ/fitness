@@ -1,0 +1,38 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav a {
+  font-family: $ff-bebas;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.main-nav__logo-link img {
+  width: 89px;
+  height: 20px;
+
+  @media (max-width: 1199px) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: 767px) {
+    width: 68px;
+    height: 15px;
+  }
+}

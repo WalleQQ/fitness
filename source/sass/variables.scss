@@ -9,8 +9,14 @@ $color-torch-red: #ed0233;
 $color-resolution-blue: #1c3374;
 $color-black-russian: #030a1a;
 
+$video-background: rgba(20, 54, 122, 0.5);
+
 $button-gradient: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 $border-gradient: linear-gradient(rgba(209, 10, 66, 1), rgba(0, 53, 159, 1));
+$border-gradient-2: linear-gradient(
+  rgba(237, 2, 51, 0.2),
+  rgba(0, 62, 183, 0.2)
+);
 
 $box-shadow-1: 0px 0px 40px rgba(28, 51, 116, 0.2);
 
