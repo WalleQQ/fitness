@@ -1,11 +1,11 @@
 import { iosVhFix } from "./utils/ios-vh-fix";
+import "../js/modules/video.js";
 
 // ---------------------------------
 
 window.addEventListener("DOMContentLoaded", () => {
   // Utils
   // ---------------------------------
-
   iosVhFix();
 
   // Modules
