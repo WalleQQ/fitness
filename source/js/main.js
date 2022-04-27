@@ -1,5 +1,6 @@
 import { iosVhFix } from "./utils/ios-vh-fix";
 import "../js/modules/video.js";
+import "../js/modules/tabs.js";
 
 // ---------------------------------
 
