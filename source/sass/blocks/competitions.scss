@@ -1,0 +1,177 @@
+.competitions {
+  position: relative;
+  background-color: $color-torch-red;
+  margin-top: 132px;
+  padding: 88px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 57%;
+    height: 100%;
+    background-image: image-set(
+      url("../img/competitions/competitions.jpg") 1x,
+      url("../img/competitions/competitions@2x.jpg") 2x,
+      url("../img/competitions/competitions.webp") 1x,
+      url("../img/competitions/competitions@2x.webp") 2x
+    );
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: 1199px) {
+    padding: 51px 0;
+    margin-top: 105px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 51px 0 343px 0;
+    margin-top: 105px;
+
+    &::before {
+      width: 100%;
+      height: 50%;
+      top: 50%;
+    }
+  }
+}
+
+.competitions__content {
+  padding: 0 81px;
+  width: 43%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: $color-default-white;
+  height: 100%;
+
+  @media (max-width: 1199px) {
+    padding: 0 45px;
+    height: 100%;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+.competitions__content p {
+  font-family: $ff-roboto-condensed-regular;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 47px;
+  width: 100%;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom: 29px;
+  }
+}
+
+.competitions__content h2 {
+  font-family: $ff-bebas;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  max-width: 201px;
+
+  @media (max-width: 1199px) {
+    font-size: 52px;
+    line-height: 52px;
+    max-width: 117px;
+  }
+}
+
+.competitions__data-list {
+  @include list-zeroing;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 9px;
+
+  @media (max-width: 1199px) {
+    position: relative;
+    row-gap: 0;
+    margin-bottom: 0;
+  }
+}
+
+.competitions__data-item {
+  max-width: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2px;
+  align-items: flex-start;
+
+  @media (max-width: 1199px) {
+    max-width: 56px;
+    row-gap: 0;
+  }
+}
+
+.competitions__data-item b {
+  font-family: $ff-roboto-condensed-regular;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  font-size: 18px;
+
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 150%;
+  }
+}
+
+.competitions__data-item p {
+  margin: 0;
+  width: min-content;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-family: $ff-roboto-condensed-regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  border-top: 1px solid $color-default-white;
+
+  @media (max-width: 1199px) {
+    font-size: 10px;
+    line-height: 150%;
+    margin: 0;
+  }
+}
+
+.competitions__data-item strong {
+  font-family: $ff-roboto-condensed-bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+
+  @media (max-width: 1199px) {
+    font-size: 24px;
+    line-height: 128%;
+  }
+}
+
+.competitions__content-button {
+  padding: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 4px solid $color-default-white;
+
+  @media (max-width: 1199px) {
+    padding: 11px;
+    font-size: 10px;
+    line-height: 12px;
+    border: 2px solid $color-default-white;
+  }
+}
