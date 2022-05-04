@@ -40,9 +40,9 @@
 }
 
 .avantages__list {
+  @include list-zeroing;
   max-width: 1366px;
   position: relative;
-  @include list-zeroing;
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(2, 340px);
@@ -112,7 +112,7 @@
   font-family: $ff-roboto-condensed-bold;
   font-size: 71px;
   line-height: 80%;
-  width: min-content;
+  width: auto;
   display: flex;
   flex-direction: column;
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
