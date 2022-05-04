@@ -83,9 +83,14 @@
   position: absolute;
   z-index: 1;
   top: 58%;
-  left: 47px;
+  left: 15%;
   width: 18px;
   height: 32px;
+
+  @media (max-width: 1200px) {
+    top: 58%;
+    left: 47px;
+  }
 
   @media (max-width: 1199px) {
     top: 54%;
@@ -103,10 +108,15 @@
   display: block;
   position: absolute;
   top: 58%;
-  right: 47px;
+  right: 15%;
   z-index: 1;
   width: 18px;
   height: 32px;
+
+  @media (max-width: 1200px) {
+    top: 58%;
+    right: 47px;
+  }
 
   @media (max-width: 1199px) {
     top: 54%;
