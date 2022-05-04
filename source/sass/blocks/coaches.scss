@@ -78,6 +78,7 @@
 }
 
 .coaches__swiper-button-prev {
+  cursor: pointer;
   display: block;
   position: absolute;
   z-index: 1;
@@ -98,6 +99,7 @@
 }
 
 .coaches__swiper-button-next {
+  cursor: pointer;
   display: block;
   position: absolute;
   top: 58%;
