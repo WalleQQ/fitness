@@ -261,3 +261,10 @@
   background: $button-gradient;
   color: $color-default-white;
 }
+
+.subscriptions__tabs-content-item-button:focus {
+  outline: none;
+  border: none;
+  background: $button-gradient;
+  color: $color-default-white;
+}
