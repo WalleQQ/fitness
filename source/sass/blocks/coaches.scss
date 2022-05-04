@@ -133,7 +133,7 @@
 .coaches__swiper-button-next svg {
   width: 16px;
   height: 32px;
-  fill: white;
+  fill: $color-default-white;
 
   @media (max-width: 767px) {
     width: 10px;
@@ -153,6 +153,14 @@
   padding: 51px 46px;
   left: 0;
   top: 0;
+
+  @media (max-width: 1199px) {
+    padding: 51px 46px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 38px 27px;
+  }
 }
 
 .coaches__swiper .swiper-slide:hover .coaches__swiper-slide-content {
