@@ -6,7 +6,7 @@ import Swiper, { Navigation } from "swiper";
 //     prevEl: ".swiper-button-prev",
 //   },
 // });
-const swiper = new Swiper(".swiper", {
+const coachesSwiper = new Swiper(".coaches__swiper", {
   modules: [Navigation],
   loop: true,
   navigation: {
@@ -26,5 +26,16 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 4,
       spaceBetween: 40,
     },
+  },
+});
+
+const reviewsSwiper = new Swiper(".reviews__swiper", {
+  modules: [Navigation],
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 100,
+  navigation: {
+    nextEl: ".reviews__swiper-button-next",
+    prevEl: ".reviews__swiper-button-prev",
   },
 });

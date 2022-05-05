@@ -2,11 +2,11 @@
   padding: 120px 0;
 
   @media (max-width: 1199px) {
-    padding: 89px 0;
+    padding: 89px 0 103px;
   }
 
   @media (max-width: 767px) {
-    padding: 86px 0;
+    padding: 86px 0 70px;
   }
 }
 
@@ -126,7 +126,7 @@
 
 .discounts__content-counts span {
   font-size: 70px;
-  line-height: 156%;
+  line-height: 142%;
 
   @media (max-width: 1199px) {
     line-height: 139%;
