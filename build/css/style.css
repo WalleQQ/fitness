@@ -1518,9 +1518,15 @@ button,
   margin-bottom: 50px;
 }
 
+.coaches__swiper-wrapper {
+  position: relative;
+  max-width: 1272px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .coaches__swiper {
-  height: 294px;
-  max-width: 1160px;
+  width: calc(100% - 112px);
 }
 
 .coaches__swiper .swiper-slide {
@@ -1540,26 +1546,26 @@ button,
   height: 294px;
 }
 
-.coaches__swiper-button-prev {
+.coaches__swiper-button-prev,
+.coaches__swiper-button-next {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
   display: block;
-  position: absolute;
-  z-index: 1;
-  top: 58%;
-  left: 15%;
-  width: 18px;
+  width: 16px;
   height: 32px;
 }
 
+.coaches__swiper-button-prev {
+  left: 0;
+}
+
 .coaches__swiper-button-next {
-  cursor: pointer;
-  display: block;
-  position: absolute;
-  top: 58%;
-  right: 15%;
-  z-index: 1;
-  width: 18px;
-  height: 32px;
+  right: 0;
 }
 
 .coaches__swiper-button-prev svg,
@@ -1719,13 +1725,8 @@ button,
   font-size: 71px;
   line-height: 80%;
   width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: block;
+  padding-bottom: 23px;
   background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
@@ -1734,6 +1735,9 @@ button,
 }
 
 .avantages__item-counts span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
   font-size: 14px;
   line-height: 150%;
@@ -2234,16 +2238,67 @@ button,
   line-height: 21px;
 }
 
-@media (max-width: 1200px) {
-  .coaches__swiper-button-prev {
-    top: 58%;
-    left: 47px;
-  }
+.page-footer {
+  padding: 33px 0;
+  background-color: #030a1a;
+}
 
-  .coaches__swiper-button-next {
-    top: 58%;
-    right: 47px;
-  }
+.footer-nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-nav__logo-link {
+  position: static;
+  margin-right: 20px;
+}
+
+.footer-nav__logo-link img {
+  width: 89px;
+  height: 20px;
+}
+
+.footer-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-nav__item a {
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.footer-nav__socials-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 25px;
 }
 
 @media (max-width: 1199px) {
@@ -2463,8 +2518,8 @@ button,
     line-height: 42px;
   }
 
-  .coaches__swiper {
-    max-width: 566px;
+  .coaches__swiper-wrapper {
+    width: 682px;
   }
 
   .coaches__swiper .swiper-slide {
@@ -2473,16 +2528,6 @@ button,
 
   .coaches__swiper .swiper-slide img {
     width: 268px;
-  }
-
-  .coaches__swiper-button-prev {
-    top: 54%;
-    left: 45px;
-  }
-
-  .coaches__swiper-button-next {
-    top: 54%;
-    right: 45px;
   }
 
   .coaches__swiper-slide-content {
@@ -2692,6 +2737,23 @@ button,
     font-size: 18px;
     line-height: 152.34%;
   }
+
+  .page-footer {
+    padding: 39px 0;
+  }
+
+  .footer-nav__logo-link img {
+    width: 82px;
+    height: 17px;
+  }
+
+  .footer-nav__list {
+    gap: 30px;
+  }
+
+  .footer-nav__socials-list {
+    gap: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2858,8 +2920,12 @@ button,
     text-align: center;
   }
 
+  .coaches__swiper-wrapper {
+    width: 290px;
+  }
+
   .coaches__swiper {
-    max-width: 226px;
+    width: calc(100% - 64px);
   }
 
   .coaches__swiper .swiper-slide {
@@ -2870,16 +2936,6 @@ button,
   .coaches__swiper .swiper-slide img {
     width: 226px;
     height: 274px;
-  }
-
-  .coaches__swiper-button-prev {
-    top: 53.5%;
-    left: 15px;
-  }
-
-  .coaches__swiper-button-next {
-    top: 53.5%;
-    right: 8px;
   }
 
   .coaches__swiper-button-prev svg,
@@ -2893,7 +2949,7 @@ button,
   }
 
   .avantages {
-    padding: 50px 0;
+    padding: 74px 0;
   }
 
   .avantages h2 {
@@ -2925,6 +2981,14 @@ button,
 
   .avantages__item-counts p {
     line-height: 96%;
+    padding-bottom: 21px;
+  }
+
+  .avantages__item-counts span {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   .avantages__item-text p {
@@ -2948,7 +3012,7 @@ button,
   }
 
   .discounts {
-    padding: 86px 0 70px;
+    padding: 57px 0 70px;
   }
 
   .discounts h2 {
@@ -3073,7 +3137,7 @@ button,
   }
 
   .contacts__content {
-    padding: 70px 15px;
+    padding: 73px 15px 66px 15px;
   }
 
   .contacts__content h2 {
@@ -3089,6 +3153,59 @@ button,
 
   .contacts__content-list::before {
     display: none;
+  }
+
+  .page-footer {
+    padding: 44px 0;
+  }
+
+  .footer-nav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav__logo-link {
+    margin: 0;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+
+  .footer-nav__logo-link img {
+    width: 68px;
+    height: 15px;
+  }
+
+  .footer-nav__list {
+    margin-bottom: 15px;
+    display: block;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    gap: 74px;
+  }
+
+  .footer-nav__item {
+    margin-bottom: 20px;
+  }
+
+  .footer-nav__item:first-of-type {
+    border: 2px solid red;
+    margin-top: 39px;
+  }
+
+  .footer-nav__item a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer-nav__socials-list {
+    gap: 36px;
+  }
+
+  .footer-nav__socials-item svg {
+    width: 27px;
+    height: 27px;
   }
 }
 

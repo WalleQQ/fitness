@@ -8,7 +8,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 50px 0;
+    padding: 74px 0;
   }
 }
 
@@ -113,8 +113,8 @@
   font-size: 71px;
   line-height: 80%;
   width: auto;
-  display: flex;
-  flex-direction: column;
+  display: block;
+  padding-bottom: 23px;
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -125,14 +125,23 @@
 
   @media (max-width: 767px) {
     line-height: 96%;
+    padding-bottom: 21px;
   }
 }
 
 .avantages__item-counts span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-family: $ff-roboto-condensed-regular;
   font-size: 14px;
   line-height: 150%;
   -webkit-text-fill-color: #2e35ac;
+
+  @media (max-width: 767px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .avantages__item-text h3 {
