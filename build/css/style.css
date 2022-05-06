@@ -2124,6 +2124,10 @@ button,
   background-color: inherit;
   border: none;
   border-bottom: 1px solid #74819c;
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
 }
 
 .contacts__form input::-webkit-input-placeholder {

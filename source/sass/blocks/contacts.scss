@@ -104,6 +104,10 @@
   background-color: inherit;
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
+  font-family: $ff-roboto-condensed-regular;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
 
   &::placeholder {
     font-family: $ff-roboto-condensed-regular;
