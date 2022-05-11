@@ -171,8 +171,8 @@
 }
 
 .contacts__content-list {
-  position: relative;
   @include list-zeroing;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 96px;

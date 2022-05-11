@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Сайт тренажерного зала SuperGym" />
+    <link
+      rel="preload"
+      href="fonts/BebasNeueRegular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/RobotoCondensed-Bold.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/RobotoCondensed-Regular.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/RobotoCondensed-Light.woff2"
+      type="font/woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <title>SuperGym</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -36,7 +64,9 @@
           <div class="promo__content">
             <h2><span>омск</span>Фитнес центр</h2>
             <p>Тренажёрный зал Групповые занятия Кардио-зона</p>
-            <a class="promo__button button">Купить абонемент</a>
+            <a class="promo__button button" href="#subscriptions"
+              >Купить абонемент</a
+            >
           </div>
           <div class="promo__image-container">
             <img
@@ -75,21 +105,22 @@
           </p>
           <div class="gym__content-hidden-text">
             <p>
-              В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с 40
-              тренажерами. Также в фитнес центре есть несколько оборудованных
-              залов для различных видов групповых занятий.
+              В зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона
+              с 40 тренажерами. Также в фитнес центре есть несколько
+              оборудованных залов для различных видов групповых занятий.
             </p>
           </div>
         </div>
 
         <div class="gym__image-container">
-          <img
-            src="img/gym/gym.jpg"
-            srcset="img/gym/gym@2x.jpg"
-            width="660"
-            height="401"
-            alt="Фотография тренажерного зала"
-          />
+            <img
+              src="img/gym/gym.jpg"
+              srcset="img/gym/gym@2x.jpg"
+              width="660"
+              height="401"
+              alt="Фотография тренажерного зала"
+            />
+          </picture>
         </div>
         <div class="gym__video-container">
           <div id="player"></div>
@@ -98,7 +129,7 @@
           </div>
         </div>
       </section>
-      <section class="subscriptions">
+      <section class="subscriptions" id="subscriptions">
         <div class="wrapper">
           <h2>Абонементы</h2>
           <ul class="subscriptions__tabs-list">
@@ -118,6 +149,7 @@
               <h4>С тренером</h4>
               <span>12 занятий</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>5000</span>
                 <p>5000</p>
                 <b> &#8381;</b>
               </div>
@@ -129,6 +161,7 @@
               <h4>Дневной</h4>
               <span>с 8:00 до 17:00</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>1700</span>
                 <p>1700</p>
                 <b> &#8381;</b>
               </div>
@@ -140,6 +173,7 @@
               <h4>Полный день</h4>
               <span>с 8:00 до 22:00</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>2700</span>
                 <p>2700</p>
                 <b> &#8381;</b>
               </div>
@@ -154,6 +188,7 @@
               <h4>С тренером</h4>
               <span>12 занятий</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>27000</span>
                 <p>27000</p>
                 <b> &#8381;</b>
               </div>
@@ -165,6 +200,7 @@
               <h4>Дневной</h4>
               <span>с 8:00 до 17:00</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>9000</span>
                 <p>9000</p>
                 <b> &#8381;</b>
               </div>
@@ -176,6 +212,7 @@
               <h4>Полный день</h4>
               <span>с 8:00 до 22:00</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>15000</span>
                 <p>15000</p>
                 <b> &#8381;</b>
               </div>
@@ -190,6 +227,7 @@
               <h4>С тренером</h4>
               <span>12 занятий</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>48000</span>
                 <p>48000</p>
                 <b> &#8381;</b>
               </div>
@@ -201,6 +239,7 @@
               <h4>Дневной</h4>
               <span>с 8:00 до 17:00</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>16000</span>
                 <p>16000</p>
                 <b> &#8381;</b>
               </div>
@@ -212,6 +251,7 @@
               <h4>Полный день</h4>
               <span>с 8:00 до 22:00</span>
               <div class="subscriptions__tabs-content-item-text">
+                <span>26000</span>
                 <p>26000</p>
                 <b> &#8381;</b>
               </div>
@@ -247,7 +287,7 @@
         <div class="wrapper">
           <h2>Тренеры</h2>
         </div>
-          <div class="coaches__swiper-wrapper">
+        <div class="coaches__swiper-wrapper">
           <div class="coaches__swiper-button-prev">
             <svg>
               <use xlink:href="img/sprite_auto.svg#arrow-left"></use>
@@ -482,11 +522,11 @@
                 </p>
               </div>
             </li>
-            <li class="avantages__item avantages__item--center">
-              <div class="avantages__item--center-counts">
+            <li class="avantages__item avantages__item-center">
+              <div class="avantages__item-center-counts">
                 <p>100<span>Тренажеров</span></p>
               </div>
-              <div class="avantages__item--center-text">
+              <div class="avantages__item-center-text">
                 <p>Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
             </li>
@@ -551,73 +591,138 @@
       <section class="reviews">
         <div class="wrapper">
           <h2>Отзывы</h2>
-          <div class="reviews__swiper-wrapper">
-            <div class="reviews__swiper-button-prev swiper-button-prev">
-              <svg>
+        </div>
+        <div class="reviews__swiper-wrapper">
+          <div class="reviews__swiper-button-prev swiper-button-prev">
+            <svg>
               <use xlink:href="img/sprite_auto.svg#arrow-left"></use>
             </svg>
           </div>
-            <div class="reviews__swiper-button-next swiper-button-next">
-              <svg>
+          <div class="reviews__swiper-button-next swiper-button-next">
+            <svg>
               <use xlink:href="img/sprite_auto.svg#arrow-right"></use>
             </svg>
           </div>
           <div class="reviews__swiper swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="img/reviews/user-avatar.png" srcset="img/reviews/user-avatar@2x.png" alt="Аватар пользователя">
+                <img
+                  src="img/reviews/user-avatar.png"
+                  srcset="img/reviews/user-avatar@2x.png"
+                  alt="Аватар пользователя"
+                />
                 <div class="reviews__swiper-slide-content">
                   <h3>Анна Орлова</h3>
-                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <p>
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе
+                    всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал
+                    просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
             </div>
@@ -626,76 +731,134 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-        <div class="contacts__form">
+          <div class="contacts__form">
             <h2>БЕСПЛАТНОЕ занятие</h2>
             <form action="https://echo.htmlacademy.ru/" method="post">
               <label for="contactsName">Имя</label>
-              <input type="text" placeholder="Имя" required>
+              <input
+                type="text"
+                placeholder="Имя"
+                id="contactsName"
+                name="contactsName"
+                required
+              />
               <label for="contactsPhone">Имя</label>
-              <input type="tel" placeholder="Телефон" required>
-              <input type="submit" value="отправить">
+              <input
+                type="tel"
+                placeholder="Телефон"
+                id="contactsPhone"
+                name="contactsPhone"
+                minlength="11"
+                maxlength="11"
+                required
+              />
+              <input type="submit" value="отправить" />
             </form>
+          </div>
+          <div class="contacts__content">
+            <h2>Контакты</h2>
+            <ul class="contacts__content-list">
+              <li class="contacts__content-item">
+                <h3>Адрес:</h3>
+                <address>г. Омск, ул. 60 лет Октября, 7</address>
+              </li>
+              <li class="contacts__content-item">
+                <h3>Телефон:</h3>
+                <a href="tel:88005555555">8-800-555-55-55</a>
+              </li>
+              <li class="contacts__content-item">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts__content-item">
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="contacts__content">
-          <h2>Контакты</h2>
-          <ul class="contacts__content-list">
-            <li class="contacts__content-item"><h3>Адрес:</h3><address>г. Омск, ул. 60 лет Октября, 7</address></li>
-            <li class="contacts__content-item"><h3>Телефон:</h3><a href="tel:88005555555">8-800-555-55-55</a></li>
-            <li class="contacts__content-item"><h3>График работы:</h3><p>Пн-Вс: с 8:00 до 22:00</p></li>
-            <li class="contacts__content-item"><h3>Email:</h3><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></li>
-          </ul>
-        </div>
-      </div>
       </section>
     </main>
     <footer class="page-footer">
-     <div class="wrapper">
-      <nav class="footer-nav">
-        <a class="footer-nav__logo-link">
-          <picture>
-            <source
-              media="(max-width: 1199px)"
-              srcset="img/supergym-tablet.png, img/supergym-tablet@2x.png 2x"
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="img/supergym-mobile.png, img/supergym-mobile@2x.png 2x"
-            />
-            <img
-              src="img/supergym.png"
-              srcset="img/supergym@2x.png"
-              alt="Логотип Supergym"
-            />
-          </picture>
-        </a>
-        <ul class="footer-nav__list">
-          <li class="footer-nav__item"><a href="#" class="footer-nav__item-link">Услуги</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__item-link">Абонементы</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__item-link">Акции</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__item-link">Тренеры</a></li>
-          <li class="footer-nav__item"><a href="#" class="footer-nav__item-link">Расписание</a></li>
-        </ul>
-        <ul class="footer-nav__socials-list">
-          <li class="footer-nav__socials-item"><a href="#" class="footer-nav__socials-item-link">
-            <svg width="24" height="13">
-            <use xlink:href="img/sprite_auto.svg#vk"></use>
-          </svg>
-        </a>
-      </li>
-          <li class="footer-nav__socials-item"><a href="#" class="footer-nav__socials-item-link">
-            <svg width="24" height="24">
-              <use xlink:href="img/sprite_auto.svg#insta"></use>
-            </svg>
-          </a></li>
-          <li class="footer-nav__socials-item"><a href="#" class="footer-nav__socials-item-link">
-            <svg width="12" height="24">
-              <use xlink:href="img/sprite_auto.svg#facebook"></use>
-            </svg>
-          </a></li>
-        </ul>
-      </nav>
-     </div>
+      <div class="wrapper">
+        <nav class="footer-nav">
+          <a class="footer-nav__logo-link">
+            <picture>
+              <source
+                media="(max-width: 1199px)"
+                srcset="img/supergym-tablet.png, img/supergym-tablet@2x.png 2x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="img/supergym-mobile.png, img/supergym-mobile@2x.png 2x"
+              />
+              <img
+                src="img/supergym.png"
+                srcset="img/supergym@2x.png"
+                alt="Логотип Supergym"
+              />
+            </picture>
+          </a>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__item-link">Услуги</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__item-link">Абонементы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__item-link">Акции</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__item-link">Тренеры</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#" class="footer-nav__item-link">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer-nav__socials-list">
+            <li class="footer-nav__socials-item">
+              <a href="#" class="footer-nav__socials-item-link">
+                <svg width="24" height="13">
+                  <use xlink:href="img/sprite_auto.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-nav__socials-item">
+              <a href="#" class="footer-nav__socials-item-link">
+                <svg width="24" height="24">
+                  <use xlink:href="img/sprite_auto.svg#insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-nav__socials-item">
+              <a href="#" class="footer-nav__socials-item-link">
+                <svg width="12" height="24">
+                  <use xlink:href="img/sprite_auto.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
+    <section class="success">
+      <div class="success__inner">
+        <h2 class="success__title">Форма успешно отправлена, спасибо! :)</h2>
+        <div class="success__button">
+          <span class="success__button-item"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="error">
+      <div class="error__inner">
+        <h2 class="error__title">Форма не отправлена! :(</h2>
+        <div class="error__button">
+          <span class="error__button-item"></span>
+        </div>
+      </div>
+    </section>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

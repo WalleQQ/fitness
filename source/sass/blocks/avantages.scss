@@ -164,7 +164,7 @@
   }
 }
 
-.avantages__item--center {
+.avantages__item-center {
   gap: 0;
   position: absolute;
   top: 50%;
@@ -197,7 +197,7 @@
   }
 }
 
-.avantages__item--center-counts p {
+.avantages__item-center-counts p {
   font-family: $ff-roboto-condensed-bold;
   font-size: 74px;
   line-height: 96%;
@@ -215,7 +215,7 @@
   }
 }
 
-.avantages__item--center-counts span {
+.avantages__item-center-counts span {
   font-size: 26px;
   line-height: 150%;
 
@@ -224,7 +224,7 @@
   }
 }
 
-.avantages__item--center-text p {
+.avantages__item-center-text p {
   font-family: $ff-roboto-condensed-regular;
   font-size: 16px;
   line-height: 150%;

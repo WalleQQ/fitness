@@ -10,6 +10,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "eslint": "eslint source/js/",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
     "build": "cross-env NODE_ENV=production gulp build & gulp imagemin",
     "start": "cross-env NODE_ENV=development gulp start",
