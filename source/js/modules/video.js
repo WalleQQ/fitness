@@ -1,9 +1,9 @@
 function loadVideo() {
   (function loadYoutubeIFrameApiScript() {
-    const tag = document.createElement("script");
-    tag.src = "https://www.youtube.com/iframe_api";
+    const tag = document.createElement('script');
+    tag.src = 'https://www.youtube.com/iframe_api';
 
-    const firstScriptTag = document.getElementsByTagName("script")[0];
+    const firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     tag.onload = setupPlayer;
@@ -13,8 +13,8 @@ function loadVideo() {
 
   function setupPlayer() {
     window.YT.ready(function () {
-      player = new window.YT.Player("player", {
-        videoId: "9TZXsZItgdw",
+      player = new window.YT.Player('player', {
+        videoId: '9TZXsZItgdw',
         events: {
           onReady: onPlayerReady,
           onStateChange: onPlayerStateChange,
@@ -30,15 +30,15 @@ function loadVideo() {
   function onPlayerStateChange() {}
 
   const playerButtonContainer = document.querySelector(
-    ".gym__video-button-container"
+      '.gym__video-button-container'
   );
-  const playerButtonPlay = document.querySelector(".gym__video-button");
-  playerButtonPlay.addEventListener("click", () => {
-    playerButtonContainer.classList.add("gym__video-button-container--hidden");
+  const playerButtonPlay = document.querySelector('.gym__video-button');
+  playerButtonPlay.addEventListener('click', () => {
+    playerButtonContainer.classList.add('gym__video-button-container--hidden');
     player.playVideo();
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   loadVideo();
 });

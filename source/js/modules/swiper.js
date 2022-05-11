@@ -1,17 +1,11 @@
-import Swiper, { Navigation } from "swiper";
+import Swiper, {Navigation} from 'swiper';
 
-// const swiper = new Swiper(".swiper", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-const coachesSwiper = new Swiper(".coaches__swiper", {
+export const coachesSwiper = new Swiper('.coaches__swiper', {
   modules: [Navigation],
   loop: true,
   navigation: {
-    nextEl: ".coaches__swiper-button-next",
-    prevEl: ".coaches__swiper-button-prev",
+    nextEl: '.coaches__swiper-button-next',
+    prevEl: '.coaches__swiper-button-prev',
   },
   breakpoints: {
     320: {
@@ -29,13 +23,13 @@ const coachesSwiper = new Swiper(".coaches__swiper", {
   },
 });
 
-const reviewsSwiper = new Swiper(".reviews__swiper", {
+export const reviewsSwiper = new Swiper('.reviews__swiper', {
   modules: [Navigation],
   loop: false,
   slidesPerView: 1,
   spaceBetween: 100,
   navigation: {
-    nextEl: ".reviews__swiper-button-next",
-    prevEl: ".reviews__swiper-button-prev",
+    nextEl: '.reviews__swiper-button-next',
+    prevEl: '.reviews__swiper-button-prev',
   },
 });

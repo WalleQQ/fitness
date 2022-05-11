@@ -856,6 +856,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -887,7 +890,6 @@ button,
 }
 
 .promo__content {
-  position: relative;
   color: #ffffff;
   padding-left: 98px;
 }
@@ -1148,13 +1150,13 @@ button,
 .subscriptions .wrapper::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-image-set(url("../img/subscriptions/subscriptions-background.png") 1x, url("../img/subscriptions/subscriptions-background@2x.png") 2x, url("../img/subscriptions/subscriptions-background.webp") 1x, url("../img/subscriptions/subscriptions-background.webp") 2x);
-  background-image: image-set(url("../img/subscriptions/subscriptions-background.png") 1x, url("../img/subscriptions/subscriptions-background@2x.png") 2x, url("../img/subscriptions/subscriptions-background.webp") 1x, url("../img/subscriptions/subscriptions-background.webp") 2x);
-  background-position: 100% 142%;
+  bottom: -100px;
+  right: -17px;
+  width: 321px;
+  height: 384px;
+  background-image: -webkit-image-set(url("../img/subscriptions/subscriptions-background.png") 1x, url("../img/subscriptions/subscriptions-background@2x.png") 2x, url("../img/subscriptions/subscriptions-background.webp") 1x, url("../img/subscriptions/subscriptions-background@2x.webp") 2x);
+  background-image: image-set(url("../img/subscriptions/subscriptions-background.png") 1x, url("../img/subscriptions/subscriptions-background@2x.png") 2x, url("../img/subscriptions/subscriptions-background.webp") 1x, url("../img/subscriptions/subscriptions-background@2x.webp") 2x);
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
@@ -1168,11 +1170,11 @@ button,
 }
 
 .subscriptions__tabs-list {
-  position: relative;
-  cursor: pointer;
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1223,9 +1225,6 @@ button,
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  -webkit-box-pack: stretch;
-  -ms-flex-pack: stretch;
-  justify-content: stretch;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1312,7 +1311,6 @@ button,
 .subscriptions__tabs-content-item-text {
   position: relative;
   z-index: 2;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1325,12 +1323,22 @@ button,
   margin-bottom: 33px;
 }
 
+.subscriptions__tabs-content-item-text span {
+  position: absolute;
+  top: -59px;
+  left: -15px;
+  z-index: -1;
+  font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
+  font-size: 100px;
+  line-height: 150%;
+  color: #e8e8e8;
+}
+
 .subscriptions__tabs-content-item p {
   font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   font-size: 60px;
   line-height: 150%;
   color: #103aae;
-  text-shadow: #e8e8e8 10px -25px 0;
 }
 
 .subscriptions__tabs-content-item b {
@@ -1356,8 +1364,7 @@ button,
   border: 2px solid #102654;
 }
 
-.subscriptions__tabs-content-item:hover
-.subscriptions__tabs-content-item-button {
+.subscriptions__tabs-content-item:hover .subscriptions__tabs-content-item-button {
   border: none;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -1756,7 +1763,7 @@ button,
   line-height: 140%;
 }
 
-.avantages__item--center {
+.avantages__item-center {
   gap: 0;
   position: absolute;
   top: 50%;
@@ -1783,7 +1790,7 @@ button,
   align-items: center;
 }
 
-.avantages__item--center-counts p {
+.avantages__item-center-counts p {
   font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   font-size: 74px;
   line-height: 96%;
@@ -1800,12 +1807,12 @@ button,
   margin-bottom: 33px;
 }
 
-.avantages__item--center-counts span {
+.avantages__item-center-counts span {
   font-size: 26px;
   line-height: 150%;
 }
 
-.avantages__item--center-text p {
+.avantages__item-center-text p {
   font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 150%;
@@ -2194,10 +2201,10 @@ button,
 }
 
 .contacts__content-list {
-  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -2299,6 +2306,184 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 25px;
+}
+
+.error {
+  display: none;
+}
+
+.error--show {
+  display: block;
+}
+
+.error__inner {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  height: 320px;
+  width: 568px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d10a42), to(#00359f));
+  background: -o-linear-gradient(#d10a42, #00359f);
+  background: linear-gradient(#d10a42, #00359f);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.error__inner::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: calc(100% - 7px);
+  height: calc(100% - 7px);
+  background-color: #ffffff;
+}
+
+.error__title {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 170%;
+  color: #102654;
+  text-align: center;
+}
+
+.error__button {
+  cursor: pointer;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+}
+
+.error__button-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 22px;
+  background-color: #102654;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.error__button-item::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 22px;
+  background-color: #102654;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.success {
+  display: none;
+}
+
+.success--show {
+  display: block;
+}
+
+.success__inner {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  height: 320px;
+  width: 568px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d10a42), to(#00359f));
+  background: -o-linear-gradient(#d10a42, #00359f);
+  background: linear-gradient(#d10a42, #00359f);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.success__inner::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: calc(100% - 7px);
+  height: calc(100% - 7px);
+  background-color: #ffffff;
+}
+
+.success__title {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 170%;
+  color: #102654;
+  text-align: center;
+}
+
+.success__button {
+  cursor: pointer;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+}
+
+.success__button-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 22px;
+  background-color: #102654;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.success__button-item::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 22px;
+  background-color: #102654;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 @media (max-width: 1199px) {
@@ -2418,6 +2603,16 @@ button,
 
   .subscriptions {
     padding: 100px 0;
+  }
+
+  .subscriptions .wrapper::before {
+    background-image: -webkit-image-set(url("../img/subscriptions/subscriptions-background-tablet.png") 1x, url("../img/subscriptions/subscriptions-background-tablet@2x.png") 2x, url("../img/subscriptions/subscriptions-background-tablet.webp") 1x, url("../img/subscriptions/subscriptions-background-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/subscriptions/subscriptions-background-tablet.png") 1x, url("../img/subscriptions/subscriptions-background-tablet@2x.png") 2x, url("../img/subscriptions/subscriptions-background-tablet.webp") 1x, url("../img/subscriptions/subscriptions-background-tablet@2x.webp") 2x);
+    background-position: 50% 50%;
+    width: 289px;
+    height: 345px;
+    bottom: -75px;
+    right: 0;
   }
 
   .subscriptions h2 {
@@ -2567,21 +2762,21 @@ button,
     font-size: 20px;
   }
 
-  .avantages__item--center {
+  .avantages__item-center {
     gap: 0;
     padding: 34px;
     width: 442px;
   }
 
-  .avantages__item--center-counts p {
+  .avantages__item-center-counts p {
     margin-bottom: 15px;
   }
 
-  .avantages__item--center-counts span {
+  .avantages__item-center-counts span {
     font-size: 22px;
   }
 
-  .avantages__item--center-text p {
+  .avantages__item-center-text p {
     max-width: 192px;
   }
 
@@ -2853,6 +3048,10 @@ button,
     padding: 70px 0;
   }
 
+  .subscriptions .wrapper::before {
+    display: none;
+  }
+
   .subscriptions h2 {
     font-size: 32px;
     line-height: 32px;
@@ -2995,7 +3194,7 @@ button,
     max-width: 227px;
   }
 
-  .avantages__item--center {
+  .avantages__item-center {
     gap: 0;
     padding: 44px;
     width: 100%;
@@ -3007,7 +3206,7 @@ button,
     top: 0;
   }
 
-  .avantages__item--center-counts p {
+  .avantages__item-center-counts p {
     margin-bottom: 6px;
   }
 
@@ -3190,7 +3389,6 @@ button,
   }
 
   .footer-nav__item:first-of-type {
-    border: 2px solid red;
     margin-top: 39px;
   }
 
