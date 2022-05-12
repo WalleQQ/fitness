@@ -1,3 +1,4 @@
+import {isEnterKey} from '../modules/utils.js';
 const tabs = document.querySelectorAll('.subscriptions__tabs-item');
 const tabContent = document.querySelectorAll(
     '.subscriptions__tabs-content-list'
@@ -17,5 +18,13 @@ tabs.forEach((tab, i) => {
     hideTab();
     tab.classList.add('subscriptions__tabs-item--current');
     tabContent[i].classList.add('subscriptions__tabs-content-list--current');
+  });
+  tab.addEventListener('keydown', (evt) => {
+    if (isEnterKey(evt)) {
+      evt.preventDefault();
+      hideTab();
+      tab.classList.add('subscriptions__tabs-item--current');
+      tabContent[i].classList.add('subscriptions__tabs-content-list--current');
+    }
   });
 });

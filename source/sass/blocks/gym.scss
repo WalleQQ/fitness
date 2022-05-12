@@ -5,6 +5,8 @@
   grid-template-columns: min-content 1fr;
   column-gap: 85px;
   justify-items: first baseline;
+  max-width: 1366px;
+  margin: 0 auto;
 
   @media (max-width: 1199px) {
     padding: 100px 0 183px;

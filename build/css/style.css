@@ -890,6 +890,7 @@ button,
 }
 
 .promo__content {
+  position: relative;
   color: #ffffff;
   padding-left: 98px;
 }
@@ -1003,6 +1004,8 @@ button,
   -moz-column-gap: 85px;
   column-gap: 85px;
   justify-items: first baseline;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .gym__content {
@@ -1342,6 +1345,7 @@ button,
 }
 
 .subscriptions__tabs-content-item b {
+  font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   margin: 0;
   color: #102654;
   font-size: 60px;
@@ -1396,6 +1400,7 @@ button,
   background-image: -webkit-image-set(url("../img/competitions/competitions.jpg") 1x, url("../img/competitions/competitions@2x.jpg") 2x, url("../img/competitions/competitions.webp") 1x, url("../img/competitions/competitions@2x.webp") 2x);
   background-image: image-set(url("../img/competitions/competitions.jpg") 1x, url("../img/competitions/competitions@2x.jpg") 2x, url("../img/competitions/competitions.webp") 1x, url("../img/competitions/competitions@2x.webp") 2x);
   background-position: 50% 50%;
+  background-color: #1c3374;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1860,6 +1865,7 @@ button,
   height: 100%;
   background-image: -webkit-image-set(url("../img/discounts/discounts.jpg") 1x, url("../img/discounts/discounts@2x.jpg") 2x, url("../img/discounts/discounts.webp") 1x, url("../img/discounts/discounts@2x.webp") 2x);
   background-image: image-set(url("../img/discounts/discounts.jpg") 1x, url("../img/discounts/discounts@2x.jpg") 2x, url("../img/discounts/discounts.webp") 1x, url("../img/discounts/discounts@2x.webp") 2x);
+  background-color: #1c3374;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3389,7 +3395,7 @@ button,
   }
 
   .footer-nav__item:first-of-type {
-    margin-top: 39px;
+    margin-top: 40px;
   }
 
   .footer-nav__item a {
