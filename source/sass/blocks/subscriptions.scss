@@ -17,8 +17,8 @@
     content: "";
     position: absolute;
     bottom: -100px;
-    right: -17px;
-    width: 321px;
+    right: 0;
+    width: 300px;
     height: 384px;
     background-image: image-set(
       url("../img/subscriptions/subscriptions-background.png") 1x,
@@ -137,6 +137,7 @@
   display: none;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
   row-gap: 20px;
 
   &--current {
@@ -247,6 +248,12 @@
   font-size: 100px;
   line-height: 150%;
   color: $color-whishper;
+
+  @media (max-width: 767px) {
+    font-size: 80px;
+    top: -41px;
+    left: -14px;
+  }
 }
 
 .subscriptions__tabs-content-item p {
@@ -254,7 +261,6 @@
   font-size: 60px;
   line-height: 150%;
   color: $color-egyptian-blue;
-  // text-shadow: #e8e8e8 10px -25px 0;
 
   @media (max-width: 767px) {
     font-size: 48px;

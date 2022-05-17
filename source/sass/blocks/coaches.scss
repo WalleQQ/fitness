@@ -89,6 +89,8 @@
 
 .coaches__swiper-button-prev,
 .coaches__swiper-button-next {
+  border: none;
+  background-color: $color-default-white;
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -121,6 +123,7 @@
 
 .coaches__swiper-slide-content {
   position: absolute;
+  overflow: auto;
   display: none;
   flex-direction: column;
   align-items: center;

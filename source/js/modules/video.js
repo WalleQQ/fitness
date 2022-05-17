@@ -1,3 +1,5 @@
+import {isEnterKey} from '../modules/utils.js';
+
 function loadVideo() {
   (function loadYoutubeIFrameApiScript() {
     const tag = document.createElement('script');
@@ -29,13 +31,20 @@ function loadVideo() {
 
   function onPlayerStateChange() {}
 
-  const playerButtonContainer = document.querySelector(
-      '.gym__video-button-container'
+  const playerButtonContainer = document.querySelector('.gym__video-button-container'
   );
   const playerButtonPlay = document.querySelector('.gym__video-button');
   playerButtonPlay.addEventListener('click', () => {
     playerButtonContainer.classList.add('gym__video-button-container--hidden');
     player.playVideo();
+  });
+
+  playerButtonPlay.addEventListener('keydown', (evt) => {
+    if (isEnterKey(evt)) {
+      playerButtonContainer.classList.add('gym__video-button-container--hidden'
+      );
+      player.playVideo();
+    }
   });
 }
 
