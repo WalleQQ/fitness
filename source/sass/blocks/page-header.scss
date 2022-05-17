@@ -7,12 +7,15 @@
     #b80027 313.31deg,
     #003d85 392.24deg
   );
+  margin-bottom: 5px;
 
   @media (max-width: 1199px) {
     padding: 40px 0 82px;
+    margin-bottom: 0;
   }
 
   @media (max-width: 767px) {
     padding: 20px 0 80px;
+    margin-bottom: 0;
   }
 }

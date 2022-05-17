@@ -46,35 +46,13 @@
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(2, 340px);
-  row-gap: 156px;
+  row-gap: 77px;
   padding: 0 162px 0 189px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 340px;
-    top: 50%;
-    left: 163px;
-    transform: translateY(-50%);
-    background-color: $color-border-2;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 340px;
-    top: 50%;
-    right: 162px;
-    transform: translateY(-50%);
-    background-color: $color-border-2;
-  }
 
   @media (max-width: 1199px) {
     grid-template-columns: repeat(2, 294px);
     padding: 0 75px 0 45px;
-    row-gap: 330px;
+    row-gap: 325px;
 
     &::before {
       display: none;
@@ -94,16 +72,61 @@
 }
 
 .avantages__item {
+  position: relative;
   width: 340px;
   display: flex;
   gap: 30px;
 
+  &:nth-child(1),
+  &:nth-child(2) {
+    padding-bottom: 78px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: $color-border-2;
+    }
+  }
+
+  &:nth-child(1) {
+    &::after {
+      left: -25px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    border-bottom: none;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      padding-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
   @media (max-width: 767px) {
+    border-bottom: none;
     flex-direction: column;
     align-items: center;
     text-align: center;
     width: 100%;
     gap: 4px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      padding-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 

@@ -103,7 +103,7 @@
   margin-bottom: 13px;
 
   @media (max-width: 1199px) {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 
   @media (max-width: 767px) {
@@ -128,6 +128,8 @@
 
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
+  background-color: $color-default-white;
+  border: none;
   position: absolute;
   z-index: 2;
   top: 50%;

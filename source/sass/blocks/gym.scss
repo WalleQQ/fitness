@@ -15,7 +15,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 70px 0;
+    padding: 67px 0;
   }
 }
 
@@ -119,12 +119,15 @@
   padding-right: 103px;
 
   @media (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
     padding: 0 45px;
     width: 100%;
     max-height: 345px;
   }
 
   @media (max-width: 767px) {
+    display: block;
     padding: 0;
     width: 100%;
     height: 313px;
@@ -137,7 +140,7 @@
   max-height: 100%;
 
   @media (max-width: 1199px) {
-    width: 100%;
+    width: 678px;
     max-height: 345px;
   }
 
@@ -150,13 +153,14 @@
 .gym__video-container {
   position: absolute;
   left: 53%;
-  bottom: 125px;
+  top: 403px;
   transform: translateX(-50%);
   width: 364px;
   height: 228px;
 
   @media (max-width: 1199px) {
     left: 50%;
+    top: unset;
     bottom: 100px;
     width: 266px;
     height: 167px;
@@ -165,7 +169,7 @@
   @media (max-width: 767px) {
     position: static;
     transform: translateX(0);
-    width: 100%;
+    width: 320px;
     height: 167px;
   }
 }
@@ -203,23 +207,43 @@
   &--hidden {
     display: none;
   }
+
+  @media (max-width: 1199px) {
+    background-image: image-set(
+      url("../img/gym/video-image-tablet.png") 1x,
+      url("../img/gym/video-image-tablet@2x.png") 2x,
+      url("../img/gym/video-image-tablet.webp") 1x,
+      url("../img/gym/video-image-tablet@2x.webp") 2x
+    );
+  }
+
+  @media (max-width: 767px) {
+    background-image: image-set(
+      url("../img/gym/video-image-mobile.png") 1x,
+      url("../img/gym/video-image-mobile@2x.png") 2x,
+      url("../img/gym/video-image-mobile.webp") 1x,
+      url("../img/gym/video-image-mobile@2x.webp") 2x
+    );
+  }
 }
 
 .gym__video-button {
   cursor: pointer;
   position: absolute;
-  z-index: 20;
+  z-index: 2;
   width: 100px;
   height: 100px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   border-radius: 50%;
+  border: none;
   background: url("../img/gym/ellipse.svg") 50% 50% no-repeat;
 
   &::before {
     content: "";
     position: absolute;
+    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -232,6 +256,7 @@
   &::after {
     content: "";
     position: absolute;
+    z-index: 1;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -239,4 +264,24 @@
     height: 17px;
     background: url("../img/icons/play.svg") 50% 50% no-repeat;
   }
+
+  @media (max-width: 1199px) {
+    width: 73px;
+    height: 73px;
+    background: url("../img/gym/ellipse-tablet.svg") 50% 50% no-repeat;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+
+    &::after {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.gym__video-button:focus {
+  background-color: $color-saphire;
 }
