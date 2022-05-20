@@ -613,40 +613,40 @@ template {
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: 'Rouble';
+  font-weight: 700;
+  font-family: "Bebas-Neue-Bold";
   font-display: swap;
-  src: url("../fonts/rouble.woff2"), url("../fonts/rouble.woff");
+  src: local("Bebas-Neue-Bold"), url("../fonts/BebasNeue-Bold.woff2"), url("../fonts/BebasNeue-Bold.woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: 'Bebas-Neue-Regular';
+  font-family: "Bebas-Neue-Regular";
   font-display: swap;
-  src: local("Bebas-Neue-Regular"), url("../fonts/BebasNeueRegular.woff2"), url("../fonts/BebasNeueRegular.woff");
+  src: local("Bebas-Neue-Regular"), url("../fonts/BebasNeue-Regular.woff2"), url("../fonts/BebasNeue-Regular.woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: 'Roboto-Condensed-Light';
+  font-family: "Roboto-Condensed-Light";
   font-display: swap;
-  src: local("Roboto-Condensed-Light"), url("../fonts/RobotoCondensed-Light.woff2"), url("../fonts/RobotoCondensed-Light.woff");
+  src: local("Roboto-Condensed-Light"), url("../fonts/RobotoCondensed-Light.woff2"), url("../fonts/RobotoCondensed-Bold.woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: 'Roboto-Condensed-Regular';
+  font-family: "Roboto-Condensed-Regular";
   font-display: swap;
-  src: local("Roboto-Condensed-Regular"), url("../fonts/RobotoCondensed-Regular.woff2"), url("../fonts/RobotoCondensed-Regular.woff");
+  src: local("Roboto-Condensed-Regular"), url("../fonts/Roboto-Condensed.woff2"), url("../fonts/Roboto-Condensed.woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: 'Roboto-Condensed-Bold';
+  font-family: "Roboto-Condensed-Bold";
   font-display: swap;
   src: local("Roboto-Condensed-Bold"), url("../fonts/RobotoCondensed-Bold.woff2"), url("../fonts/RobotoCondensed-Bold.woff");
 }
@@ -836,6 +836,7 @@ button,
   font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   font-size: 12px;
   line-height: 14px;
+  letter-spacing: 0.05em;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -871,6 +872,7 @@ button,
   line-height: 26px;
   letter-spacing: 0.03em;
   color: #ffffff;
+  margin-right: 2px;
 }
 
 .main-nav__logo-link img {
@@ -893,11 +895,11 @@ button,
 .promo__content {
   position: relative;
   color: #ffffff;
-  padding-left: 101px;
+  padding-left: 99px;
 }
 
 .promo__content h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 109px;
   line-height: 109px;
   text-align: right;
@@ -913,13 +915,16 @@ button,
   margin-top: 112px;
   margin-bottom: 51px;
   max-width: 298px;
+  -webkit-text-stroke: 4px;
 }
 
 .promo__content h2 span {
+  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
   font-size: 49px;
   line-height: 59px;
   letter-spacing: 0.03em;
   margin-bottom: 7px;
+  -webkit-text-stroke: 0;
 }
 
 .promo__content p {
@@ -944,11 +949,10 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 24px;
+  padding: 19px;
   border: 4px solid #ffffff;
   color: #ffffff;
-  max-width: 230px;
-  max-height: 61px;
+  max-width: 233px;
 }
 
 .promo__image-container {
@@ -967,7 +971,7 @@ button,
 .promo__socials {
   -ms-flex-item-align: end;
   align-self: flex-end;
-  padding-bottom: 46px;
+  padding-bottom: 41px;
 }
 
 .promo__socials-list {
@@ -994,34 +998,35 @@ button,
 
 .gym {
   position: relative;
-  padding: 120px 0 235px;
+  padding: 115px 0 235px 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: -webkit-min-content 1fr;
   -ms-grid-columns: min-content 1fr;
   grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
-  -webkit-column-gap: 85px;
-  -moz-column-gap: 85px;
-  column-gap: 85px;
+  -webkit-column-gap: 88px;
+  -moz-column-gap: 88px;
+  column-gap: 88px;
   justify-items: first baseline;
   max-width: 1366px;
   margin: 0 auto;
 }
 
 .gym__content {
-  margin: 44px 0 0 166px;
+  margin: 44px 0 0 163px;
   padding: 0;
   max-width: 100%;
   width: 352px;
 }
 
 .gym__content h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .gym__content strong {
@@ -1091,7 +1096,7 @@ button,
 }
 
 .gym__video-button-container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1119,7 +1124,7 @@ button,
 }
 
 .gym__video-button::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -1135,7 +1140,7 @@ button,
 }
 
 .gym__video-button::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -1154,12 +1159,12 @@ button,
 
 .subscriptions {
   position: relative;
-  padding: 113px 0;
+  padding: 120px 0;
   background-color: #f8f9fc;
 }
 
 .subscriptions .wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -100px;
   right: 0;
@@ -1173,11 +1178,11 @@ button,
 
 .subscriptions h2 {
   text-align: center;
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .subscriptions__tabs-list {
@@ -1200,7 +1205,7 @@ button,
 }
 
 .subscriptions__tabs-list::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -1236,11 +1241,14 @@ button,
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
   row-gap: 20px;
 }
 
@@ -1272,7 +1280,7 @@ button,
 }
 
 .subscriptions__tabs-content-item:hover::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -1286,7 +1294,7 @@ button,
 }
 
 .subscriptions__tabs-content-item:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -1365,8 +1373,7 @@ button,
 .subscriptions__tabs-content-item-button {
   position: relative;
   z-index: 2;
-  padding: 27px 47px;
-  max-height: 64px;
+  padding: 23px 42px;
   max-width: 206px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1378,8 +1385,7 @@ button,
   border: 2px solid #102654;
 }
 
-.subscriptions__tabs-content-item:hover
-.subscriptions__tabs-content-item-button {
+.subscriptions__tabs-content-item:hover .subscriptions__tabs-content-item-button {
   border: none;
   background: -o-linear-gradient(352.95deg, #ed0233 17.6%, #003eb7 95.31%);
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -1397,12 +1403,12 @@ button,
 .competitions {
   position: relative;
   background-color: #ed0233;
-  margin-top: 132px;
+  margin-top: 125px;
   padding: 88px 0;
 }
 
 .competitions::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1441,7 +1447,7 @@ button,
 }
 
 .competitions__content h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 0.03em;
@@ -1533,12 +1539,12 @@ button,
 }
 
 .coaches {
-  padding: 116px 0;
+  padding: 118px 0 118px 2px;
   position: relative;
 }
 
 .coaches h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1548,7 +1554,6 @@ button,
 .coaches__swiper-wrapper {
   position: relative;
   max-width: 1272px;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -1586,7 +1591,8 @@ button,
   cursor: pointer;
   display: block;
   width: 16px;
-  height: 32px;
+  height: 33px;
+  padding: 1px;
 }
 
 .coaches__swiper-button-prev {
@@ -1630,6 +1636,12 @@ button,
   display: flex;
 }
 
+.coaches__swiper .swiper-slide:focus .coaches__swiper-slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .coaches__swiper-slide-content h3 {
   font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   font-size: 18px;
@@ -1667,7 +1679,7 @@ button,
 }
 
 .coaches__swiper-slide-content-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 7px;
   left: 9px;
@@ -1679,17 +1691,17 @@ button,
 
 .avantages {
   background-color: #f8f9fc;
-  padding: 123px 0;
+  padding: 122px 0;
   margin: 0 auto;
 }
 
 .avantages h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 66px;
+  margin-bottom: 65px;
 }
 
 .avantages__list-wrapper {
@@ -1731,7 +1743,7 @@ button,
 
 .avantages__item:nth-child(1)::after,
 .avantages__item:nth-child(2)::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 2px;
   width: 100%;
@@ -1772,7 +1784,7 @@ button,
 .avantages__item-text h3 {
   font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   font-size: 22px;
-  line-height: 150%;
+  margin-bottom: 9px;
 }
 
 .avantages__item-text p {
@@ -1853,7 +1865,7 @@ button,
 
 .discounts h2 {
   text-align: center;
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1863,13 +1875,14 @@ button,
 .discounts__content-wrapper {
   position: relative;
   color: #ffffff;
-  width: 560px;
+  max-width: 560px;
+  width: 100%;
   min-height: 462px;
   background-color: #ed0233;
 }
 
 .discounts__content-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 0;
@@ -1927,7 +1940,8 @@ button,
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 560px;
+  max-width: 560px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1960,7 +1974,7 @@ button,
 }
 
 .discounts__item::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -1986,7 +2000,7 @@ button,
   z-index: 2;
   font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
   font-size: 16px;
-  margin-bottom: 69px;
+  margin-bottom: 72px;
   line-height: 140%;
 }
 
@@ -2008,7 +2022,7 @@ button,
 }
 
 .reviews h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -2063,6 +2077,7 @@ button,
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
   background-color: #ffffff;
+  padding: 1px;
   border: none;
   position: absolute;
   z-index: 2;
@@ -2103,7 +2118,7 @@ button,
 }
 
 .contacts::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -2122,17 +2137,17 @@ button,
 
 .contacts__form {
   width: 50%;
-  padding: 67px 170px 61px 103px;
+  padding: 63px 170px 61px 103px;
   background-color: #102654;
   color: #ffffff;
 }
 
 .contacts__form h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 
 .contacts__form form {
@@ -2145,6 +2160,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 30px;
+  row-gap: 28px;
 }
 
 .contacts__form label {
@@ -2163,7 +2179,7 @@ button,
 
 .contacts__form input {
   width: calc(50% - 15px);
-  padding: 10px 10px 10px 0;
+  padding: 10px 10px 7px 0;
   background-color: inherit;
   border: none;
   border-bottom: 1px solid #74819c;
@@ -2208,9 +2224,9 @@ button,
   color: #ffffff;
 }
 
-.contacts__form input[type='submit'] {
+.contacts__form input[type="submit"] {
   width: 100%;
-  padding: 13px 21px;
+  padding: 16px 21px;
   font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -2221,15 +2237,15 @@ button,
 
 .contacts__content {
   width: 50%;
-  padding: 67px 101px 62px 123px;
+  padding: 72px 101px 62px 120px;
 }
 
 .contacts__content h2 {
-  font-family: "Bebas-Neue-Regular", "Arial", sans-serif;
+  font-family: "Bebas-Neue-Bold", "Arial", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 
 .contacts__content-list {
@@ -2245,10 +2261,11 @@ button,
   -moz-column-gap: 120px;
   column-gap: 120px;
   row-gap: 17px;
+  padding-left: 3px;
 }
 
 .contacts__content-list::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2264,7 +2281,7 @@ button,
   font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   font-size: 16px;
   line-height: 150%;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .contacts__content-item address,
@@ -2278,7 +2295,7 @@ button,
 }
 
 .page-footer {
-  padding: 45px 0;
+  padding: 47px 0;
   background-color: #030a1a;
 }
 
@@ -2533,6 +2550,7 @@ button,
   .main-nav a {
     font-size: 24px;
     line-height: 24px;
+    margin-right: 0;
   }
 
   .main-nav__logo-link img {
@@ -2554,12 +2572,13 @@ button,
     font-size: 86px;
     line-height: 86px;
     margin-top: 71px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
 
   .promo__content h2 span {
     font-size: 34px;
     line-height: 41px;
+    margin-bottom: 4px;
   }
 
   .promo__content p {
@@ -2569,7 +2588,7 @@ button,
 
   .promo__button {
     max-width: 185px;
-    max-height: 62px;
+    padding: 19px;
   }
 
   .promo__image-container {
@@ -2601,10 +2620,12 @@ button,
   .gym__content h2 {
     font-size: 42px;
     line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 7px;
   }
 
   .gym__content strong {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .gym__content p {
@@ -2703,6 +2724,9 @@ button,
     -ms-flex-align: center;
     align-items: center;
     row-gap: 40px;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
   }
 
   .subscriptions__tabs-content-item {
@@ -2710,9 +2734,18 @@ button,
     padding: 65px 77px;
   }
 
+  .subscriptions__tabs-content-item-button {
+    padding: 23px 42px;
+  }
+
   .competitions {
-    padding: 51px 0;
+    padding: 48px 0 52px 0;
     margin-top: 105px;
+  }
+
+  .competitions::before {
+    background-image: -webkit-image-set(url("../img/competitions/competitions-tablet.jpg") 1x, url("../img/competitions/competitions-tablet@2x.jpg") 2x, url("../img/competitions/competitions-tablet.webp") 1x, url("../img/competitions/competitions-tablet@2x.webp") 2x);
+    background-image: image-set(url("../img/competitions/competitions-tablet.jpg") 1x, url("../img/competitions/competitions-tablet@2x.jpg") 2x, url("../img/competitions/competitions-tablet.webp") 1x, url("../img/competitions/competitions-tablet@2x.webp") 2x);
   }
 
   .competitions__content {
@@ -2731,11 +2764,12 @@ button,
     font-size: 52px;
     line-height: 52px;
     max-width: 117px;
+    margin-top: 3px;
   }
 
   .competitions__data-list {
     position: relative;
-    row-gap: 0;
+    row-gap: 2px;
     margin-bottom: 0;
   }
 
@@ -2756,6 +2790,9 @@ button,
     font-size: 10px;
     line-height: 150%;
     margin: 0;
+    -webkit-column-gap: 4px;
+    -moz-column-gap: 4px;
+    column-gap: 4px;
   }
 
   .competitions__data-item strong {
@@ -2838,15 +2875,18 @@ button,
 
   .avantages__item-counts p {
     font-size: 58px;
+    padding-bottom: 26px;
   }
 
   .avantages__item-text h3 {
     font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 0;
   }
 
   .avantages__item-center {
     gap: 0;
-    padding: 34px;
+    padding: 36px;
     width: 442px;
   }
 
@@ -2885,6 +2925,7 @@ button,
 
   .discounts__content-wrapper {
     width: 678px;
+    max-width: 678px;
   }
 
   .discounts__content-wrapper::before {
@@ -2914,7 +2955,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    width: 678px;
+    max-width: 678px;
     gap: 30px;
   }
 
@@ -2988,6 +3029,7 @@ button,
     -webkit-column-gap: 60px;
     -moz-column-gap: 60px;
     column-gap: 60px;
+    row-gap: 30px;
   }
 
   .contacts__form input {
@@ -2996,7 +3038,7 @@ button,
 
   .contacts__content {
     width: 100%;
-    padding: 73px 101px 62px 133px;
+    padding: 70px 101px 62px 133px;
   }
 
   .contacts__content h2 {
@@ -3010,11 +3052,13 @@ button,
     -webkit-column-gap: 96px;
     -moz-column-gap: 96px;
     column-gap: 96px;
+    padding-left: 0;
   }
 
   .contacts__content-item h3 {
     font-size: 20px;
     line-height: 150%;
+    margin-bottom: 4px;
   }
 
   .contacts__content-item address,
@@ -3025,7 +3069,7 @@ button,
   }
 
   .page-footer {
-    padding: 46px 0;
+    padding: 48px 0;
   }
 
   .footer-nav__logo-link img {
@@ -3055,6 +3099,7 @@ button,
   .main-nav a {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 0;
   }
 
   .main-nav__logo-link img {
@@ -3075,17 +3120,23 @@ button,
   .promo__content h2 {
     font-size: 78px;
     line-height: 78px;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
+    margin-top: 72px;
   }
 
   .promo__content h2 span {
     font-size: 28px;
     line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .promo__content p {
+    bottom: 116px;
   }
 
   .promo__button {
     max-width: 100%;
-    max-height: 60px;
+    padding: 20px;
   }
 
   .promo__image-container {
@@ -3093,7 +3144,7 @@ button,
   }
 
   .gym {
-    padding: 67px 0;
+    padding: 69px 0;
   }
 
   .gym__content {
@@ -3104,6 +3155,8 @@ button,
   }
 
   .gym__content h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -3144,7 +3197,7 @@ button,
   }
 
   .subscriptions {
-    padding: 70px 0;
+    padding: 72px 0;
   }
 
   .subscriptions .wrapper::before {
@@ -3159,7 +3212,7 @@ button,
 
   .subscriptions__tabs-list {
     max-width: 290px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   .subscriptions__tabs-item h3 {
@@ -3175,16 +3228,22 @@ button,
   .subscriptions__tabs-content-item h4 {
     font-size: 22px;
     line-height: 110.16%;
+    margin-bottom: 10px;
   }
 
   .subscriptions__tabs-content-item span {
     margin-bottom: 52px;
   }
 
+  .subscriptions__tabs-content-item-text {
+    padding-left: 8px;
+    margin-bottom: 29px;
+  }
+
   .subscriptions__tabs-content-item-text span {
     font-size: 80px;
-    top: -41px;
-    left: -14px;
+    top: -43px;
+    left: -9px;
   }
 
   .subscriptions__tabs-content-item p {
@@ -3197,15 +3256,21 @@ button,
     line-height: 150%;
   }
 
+  .subscriptions__tabs-content-item-button {
+    padding: 25px 42px;
+  }
+
   .competitions {
-    padding: 51px 0 343px 0;
-    margin-top: 72px;
+    padding: 47px 0 344px 0;
+    margin-top: 69px;
   }
 
   .competitions::before {
     width: 100%;
     height: 50%;
     top: 50%;
+    background-image: -webkit-image-set(url("../img/competitions/competitions-mobile.jpg") 1x, url("../img/competitions/competitions-mobile@2x.jpg") 2x, url("../img/competitions/competitions-mobile.webp") 1x, url("../img/competitions/competitions-mobile@2x.webp") 2x);
+    background-image: image-set(url("../img/competitions/competitions-mobile.jpg") 1x, url("../img/competitions/competitions-mobile@2x.jpg") 2x, url("../img/competitions/competitions-mobile.webp") 1x, url("../img/competitions/competitions-mobile@2x.webp") 2x);
   }
 
   .competitions__content {
@@ -3213,8 +3278,22 @@ button,
     height: 50%;
   }
 
+  .competitions__content h2 {
+    margin-top: 4px;
+  }
+
+  .competitions__data-list {
+    row-gap: 5px;
+  }
+
+  .competitions__data-item p {
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+  }
+
   .coaches {
-    padding: 69px 0;
+    padding: 71px 0;
   }
 
   .coaches h2 {
@@ -3253,20 +3332,20 @@ button,
   }
 
   .avantages {
-    padding: 74px 0;
+    padding: 67px 0;
   }
 
   .avantages h2 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
 
   .avantages__list {
     padding: 0;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 39px;
+    row-gap: 35px;
     justify-items: center;
   }
 
@@ -3296,7 +3375,7 @@ button,
 
   .avantages__item-counts p {
     line-height: 96%;
-    padding-bottom: 21px;
+    padding-bottom: 19px;
   }
 
   .avantages__item-counts span {
@@ -3304,6 +3383,10 @@ button,
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+
+  .avantages__item-text h3 {
+    margin-bottom: 3px;
   }
 
   .avantages__item-text p {
@@ -3320,14 +3403,20 @@ button,
     transform: translateX(0) translateY(0);
     left: 0;
     top: 0;
+    margin-bottom: 7px;
+  }
+
+  .avantages__item-center-counts {
+    margin-top: 8px;
   }
 
   .avantages__item-center-counts p {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
+    line-height: 84%;
   }
 
   .discounts {
-    padding: 57px 0 70px;
+    padding: 65px 0 70px;
   }
 
   .discounts h2 {
@@ -3444,12 +3533,13 @@ button,
   }
 
   .contacts__form {
-    padding: 70px 15px;
+    padding: 68px 15px;
   }
 
   .contacts__form h2 {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 29px;
   }
 
   .contacts__form form {
@@ -3457,29 +3547,39 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    row-gap: 26px;
   }
 
   .contacts__form input {
     width: 100%;
   }
 
+  .contacts__form input:last-child {
+    margin-top: 12px;
+  }
+
   .contacts__content {
-    padding: 73px 15px 66px 15px;
+    padding: 71px 15px 66px 15px;
   }
 
   .contacts__content h2 {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 38px;
+    margin-bottom: 35px;
   }
 
   .contacts__content-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    padding-left: 0;
   }
 
   .contacts__content-list::before {
     display: none;
+  }
+
+  .contacts__content-item h3 {
+    margin-bottom: 3px;
   }
 
   .page-footer {
@@ -3545,5 +3645,30 @@ button,
   .promo__image-container {
     margin-top: 0;
     margin-right: 0;
+  }
+
+  .coaches__swiper-button-prev {
+    left: 20px;
+  }
+
+  .coaches__swiper-button-next {
+    right: 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1335px) {
+  .coaches__swiper {
+    max-width: 994px;
+  }
+}
+
+@media (min-width: 1199px) and (max-width: 1365px) {
+  .avantages__list {
+    -ms-grid-columns: (250px)[2];
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  .avantages__item {
+    width: 250px;
   }
 }

@@ -1,4 +1,7 @@
 import {isEnterKey} from '../modules/utils.js';
+const gymVideoPlayer = document.querySelector('#player');
+gymVideoPlayer.setAttribute('tabindex', '-1');
+
 
 function loadVideo() {
   (function loadYoutubeIFrameApiScript() {

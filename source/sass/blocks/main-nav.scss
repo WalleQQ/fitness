@@ -12,15 +12,18 @@
   line-height: 26px;
   letter-spacing: 0.03em;
   color: $color-default-white;
+  margin-right: 2px;
 
   @media (max-width: 1199px) {
     font-size: 24px;
     line-height: 24px;
+    margin-right: 0;
   }
 
   @media (max-width: 767px) {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 0;
   }
 }
 

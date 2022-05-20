@@ -1,5 +1,5 @@
 .coaches {
-  padding: 116px 0;
+  padding: 118px 0 118px 2px;
   position: relative;
 
   @media (max-width: 1199px) {
@@ -7,12 +7,12 @@
   }
 
   @media (max-width: 767px) {
-    padding: 69px 0;
+    padding: 71px 0;
   }
 }
 
 .coaches h2 {
-  font-family: $ff-bebas;
+  font-family: $ff-bebas-bold;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -36,7 +36,6 @@
 .coaches__swiper-wrapper {
   position: relative;
   max-width: 1272px;
-  width: 100%;
   margin: 0 auto;
 
   @media (max-width: 1199px) {
@@ -50,6 +49,10 @@
 
 .coaches__swiper {
   width: calc(100% - 112px);
+
+  @media (min-width: 1200px) and (max-width: 1335px) {
+    max-width: 994px;
+  }
 
   @media (max-width: 767px) {
     width: calc(100% - 64px);
@@ -98,15 +101,24 @@
   cursor: pointer;
   display: block;
   width: 16px;
-  height: 32px;
+  height: 33px;
+  padding: 1px;
 }
 
 .coaches__swiper-button-prev {
   left: 0;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    left: 20px;
+  }
 }
 
 .coaches__swiper-button-next {
   right: 0;
+
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    right: 20px;
+  }
 }
 
 .coaches__swiper-button-prev svg,
@@ -145,6 +157,10 @@
 }
 
 .coaches__swiper .swiper-slide:hover .coaches__swiper-slide-content {
+  display: flex;
+}
+
+.coaches__swiper .swiper-slide:focus .coaches__swiper-slide-content {
   display: flex;
 }
 
