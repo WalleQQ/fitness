@@ -42,6 +42,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+  max-width: 500px;
 
   @media (max-width: 1199px) {
     gap: 30px;
@@ -83,6 +84,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
+  max-width: 200px;
 
   @media (max-width: 1199px) {
     gap: 20px;

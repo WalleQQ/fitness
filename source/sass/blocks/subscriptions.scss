@@ -14,17 +14,17 @@
 
 .subscriptions .wrapper {
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -100px;
     right: 0;
     width: 300px;
     height: 384px;
     background-image: image-set(
-      url("../img/subscriptions/subscriptions-background.png") 1x,
-      url("../img/subscriptions/subscriptions-background@2x.png") 2x,
-      url("../img/subscriptions/subscriptions-background.webp") 1x,
-      url("../img/subscriptions/subscriptions-background@2x.webp") 2x
+      url('../img/subscriptions/subscriptions-background.png') 1x,
+      url('../img/subscriptions/subscriptions-background@2x.png') 2x,
+      url('../img/subscriptions/subscriptions-background.webp') 1x,
+      url('../img/subscriptions/subscriptions-background@2x.webp') 2x
     );
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -33,10 +33,10 @@
   @media (max-width: 1199px) {
     &::before {
       background-image: image-set(
-        url("../img/subscriptions/subscriptions-background-tablet.png") 1x,
-        url("../img/subscriptions/subscriptions-background-tablet@2x.png") 2x,
-        url("../img/subscriptions/subscriptions-background-tablet.webp") 1x,
-        url("../img/subscriptions/subscriptions-background-tablet@2x.webp") 2x
+        url('../img/subscriptions/subscriptions-background-tablet.png') 1x,
+        url('../img/subscriptions/subscriptions-background-tablet@2x.png') 2x,
+        url('../img/subscriptions/subscriptions-background-tablet.webp') 1x,
+        url('../img/subscriptions/subscriptions-background-tablet@2x.webp') 2x
       );
       background-position: 50% 50%;
       width: 289px;
@@ -85,7 +85,7 @@
   margin: 0 auto 38px auto;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -136,7 +136,7 @@
   @include list-zeroing;
   display: none;
   align-items: stretch;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 20px;
@@ -167,7 +167,7 @@
 
   &:hover {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       z-index: 1;
       top: 50%;
@@ -179,7 +179,7 @@
     }
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       z-index: -1;
       top: 50%;
@@ -189,6 +189,11 @@
       height: 100%;
       background: $border-gradient;
     }
+  }
+
+  @media (min-width: 1199px) and (max-width: 1365px) {
+    min-width: 300px;
+    max-width: 300px;
   }
 
   @media (max-width: 1199px) {
@@ -308,7 +313,8 @@
   }
 }
 
-.subscriptions__tabs-content-item:hover .subscriptions__tabs-content-item-button {
+.subscriptions__tabs-content-item:hover
+  .subscriptions__tabs-content-item-button {
   border: none;
   background: $button-gradient;
   color: $color-default-white;
