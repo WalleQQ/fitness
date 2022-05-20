@@ -1,6 +1,6 @@
 .subscriptions {
   position: relative;
-  padding: 113px 0;
+  padding: 120px 0;
   background-color: $color-ghost-white;
 
   @media (max-width: 1199px) {
@@ -8,7 +8,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 70px 0;
+    padding: 72px 0;
   }
 }
 
@@ -55,11 +55,11 @@
 
 .subscriptions h2 {
   text-align: center;
-  font-family: $ff-bebas;
+  font-family: $ff-bebas-bold;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (max-width: 1199px) {
     font-size: 42px;
@@ -101,7 +101,7 @@
 
   @media (max-width: 767px) {
     max-width: 290px;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 }
 
@@ -136,8 +136,9 @@
   @include list-zeroing;
   display: none;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  column-gap: 40px;
   row-gap: 20px;
 
   &--current {
@@ -148,6 +149,7 @@
     flex-direction: column;
     align-items: center;
     row-gap: 40px;
+    column-gap: 0;
   }
 }
 
@@ -212,6 +214,7 @@
   @media (max-width: 767px) {
     font-size: 22px;
     line-height: 110.16%;
+    margin-bottom: 10px;
   }
 }
 
@@ -237,6 +240,11 @@
   align-items: center;
   column-gap: 9px;
   margin-bottom: 33px;
+
+  @media (max-width: 767px) {
+    padding-left: 8px;
+    margin-bottom: 29px;
+  }
 }
 
 .subscriptions__tabs-content-item-text span {
@@ -251,8 +259,8 @@
 
   @media (max-width: 767px) {
     font-size: 80px;
-    top: -41px;
-    left: -14px;
+    top: -43px;
+    left: -9px;
   }
 }
 
@@ -284,13 +292,20 @@
 .subscriptions__tabs-content-item-button {
   position: relative;
   z-index: 2;
-  padding: 27px 47px;
-  max-height: 64px;
+  padding: 23px 42px;
   max-width: 206px;
   display: flex;
   align-items: center;
   color: $color-saphire;
   border: 2px solid $color-saphire;
+
+  @media (max-width: 1199px) {
+    padding: 23px 42px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 25px 42px;
+  }
 }
 
 .subscriptions__tabs-content-item:hover .subscriptions__tabs-content-item-button {

@@ -11,7 +11,7 @@
 }
 
 .reviews h2 {
-  font-family: $ff-bebas;
+  font-family: $ff-bebas-bold;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -129,6 +129,7 @@
 .reviews__swiper-button-prev,
 .reviews__swiper-button-next {
   background-color: $color-default-white;
+  padding: 1px;
   border: none;
   position: absolute;
   z-index: 2;

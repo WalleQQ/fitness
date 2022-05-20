@@ -1,9 +1,9 @@
 .gym {
   position: relative;
-  padding: 120px 0 235px;
+  padding: 115px 0 235px 0;
   display: grid;
   grid-template-columns: min-content 1fr;
-  column-gap: 85px;
+  column-gap: 88px;
   justify-items: first baseline;
   max-width: 1366px;
   margin: 0 auto;
@@ -15,12 +15,12 @@
   }
 
   @media (max-width: 767px) {
-    padding: 67px 0;
+    padding: 69px 0;
   }
 }
 
 .gym__content {
-  margin: 44px 0 0 166px;
+  margin: 44px 0 0 163px;
   padding: 0;
   max-width: 100%;
   width: 352px;
@@ -42,18 +42,23 @@
 }
 
 .gym__content h2 {
-  font-family: $ff-bebas;
+  font-family: $ff-bebas-bold;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   margin-bottom: 5px;
+  margin-top: 5px;
 
   @media (max-width: 1199px) {
     font-size: 42px;
     line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 7px;
   }
 
   @media (max-width: 767px) {
+    margin-top: 0;
+    margin-bottom: 4px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -69,7 +74,7 @@
   margin-bottom: 40px;
 
   @media (max-width: 1199px) {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   @media (max-width: 767px) {

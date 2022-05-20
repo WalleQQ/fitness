@@ -6,7 +6,7 @@
   }
 
   @media (max-width: 767px) {
-    padding: 57px 0 70px;
+    padding: 65px 0 70px;
   }
 }
 
@@ -24,7 +24,7 @@
 
 .discounts h2 {
   text-align: center;
-  font-family: $ff-bebas;
+  font-family: $ff-bebas-bold;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -46,7 +46,8 @@
 .discounts__content-wrapper {
   position: relative;
   color: $color-default-white;
-  width: 560px;
+  max-width: 560px;
+  width: 100%;
   min-height: 462px;
   background-color: $color-torch-red;
 
@@ -72,6 +73,7 @@
 
   @media (max-width: 1199px) {
     width: 678px;
+    max-width: 678px;
 
     &::before {
       width: 59%;
@@ -168,7 +170,8 @@
 
 .discounts__list {
   @include list-zeroing;
-  width: 560px;
+  max-width: 560px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -177,7 +180,7 @@
 
   @media (max-width: 1199px) {
     flex-direction: row;
-    width: 678px;
+    max-width: 678px;
     gap: 30px;
   }
 
@@ -233,7 +236,7 @@
   z-index: 2;
   font-family: $ff-roboto-condensed-regular;
   font-size: 16px;
-  margin-bottom: 69px;
+  margin-bottom: 72px;
   line-height: 140%;
 
   @media (max-width: 1199px) {

@@ -3,6 +3,8 @@ import Swiper, {Navigation} from 'swiper';
 export const coachesSwiper = new Swiper('.coaches__swiper', {
   modules: [Navigation],
   loop: true,
+  watchSlidesProgress: true,
+  watchSlidesVisibility: true,
   navigation: {
     nextEl: '.coaches__swiper-button-next',
     prevEl: '.coaches__swiper-button-prev',

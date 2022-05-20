@@ -1,6 +1,6 @@
 .avantages {
   background-color: $color-ghost-white;
-  padding: 123px 0;
+  padding: 122px 0;
   margin: 0 auto;
 
   @media (max-width: 1199px) {
@@ -8,17 +8,17 @@
   }
 
   @media (max-width: 767px) {
-    padding: 74px 0;
+    padding: 67px 0;
   }
 }
 
 .avantages h2 {
-  font-family: $ff-bebas;
+  font-family: $ff-bebas-bold;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 66px;
+  margin-bottom: 65px;
 
   @media (max-width: 1199px) {
     font-size: 42px;
@@ -29,7 +29,7 @@
   @media (max-width: 767px) {
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
 }
 
@@ -49,6 +49,10 @@
   row-gap: 77px;
   padding: 0 162px 0 189px;
 
+  @media (min-width: 1199px) and (max-width: 1365px) {
+    grid-template-columns: repeat(2, 250px);
+  }
+
   @media (max-width: 1199px) {
     grid-template-columns: repeat(2, 294px);
     padding: 0 75px 0 45px;
@@ -66,7 +70,7 @@
   @media (max-width: 767px) {
     padding: 0;
     grid-template-columns: 1fr;
-    row-gap: 39px;
+    row-gap: 35px;
     justify-items: center;
   }
 }
@@ -96,6 +100,10 @@
     &::after {
       left: -25px;
     }
+  }
+
+  @media (min-width: 1199px) and (max-width: 1365px) {
+    width: 250px;
   }
 
   @media (max-width: 1199px) {
@@ -144,11 +152,12 @@
 
   @media (max-width: 1199px) {
     font-size: 58px;
+    padding-bottom: 26px;
   }
 
   @media (max-width: 767px) {
     line-height: 96%;
-    padding-bottom: 21px;
+    padding-bottom: 19px;
   }
 }
 
@@ -170,10 +179,16 @@
 .avantages__item-text h3 {
   font-family: $ff-roboto-condensed-bold;
   font-size: 22px;
-  line-height: 150%;
+  margin-bottom: 9px;
 
   @media (max-width: 1199px) {
     font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 3px;
   }
 }
 
@@ -205,7 +220,7 @@
 
   @media (max-width: 1199px) {
     gap: 0;
-    padding: 34px;
+    padding: 36px;
     width: 442px;
   }
 
@@ -217,6 +232,13 @@
     transform: translateX(0) translateY(0);
     left: 0;
     top: 0;
+    margin-bottom: 7px;
+  }
+}
+
+.avantages__item-center-counts {
+  @media (max-width: 767px) {
+    margin-top: 8px;
   }
 }
 
@@ -234,7 +256,8 @@
   }
 
   @media (max-width: 767px) {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
+    line-height: 84%;
   }
 }
 
