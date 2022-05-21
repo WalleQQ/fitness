@@ -46,6 +46,7 @@
 
   @media (max-width: 1199px) {
     gap: 30px;
+    max-width: 390px;
   }
 
   @media (max-width: 767px) {
@@ -88,10 +89,12 @@
 
   @media (max-width: 1199px) {
     gap: 20px;
+    max-width: 110px;
   }
 
   @media (max-width: 767px) {
     gap: 36px;
+    max-width: 200px;
   }
 }
 

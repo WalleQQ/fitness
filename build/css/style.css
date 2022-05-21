@@ -3083,10 +3083,12 @@ button,
 
   .footer-nav__list {
     gap: 30px;
+    max-width: 390px;
   }
 
   .footer-nav__socials-list {
     gap: 20px;
+    max-width: 110px;
   }
 }
 
@@ -3656,6 +3658,7 @@ button,
 
   .footer-nav__socials-list {
     gap: 36px;
+    max-width: 200px;
   }
 
   .footer-nav__socials-item svg {
